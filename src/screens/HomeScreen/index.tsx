@@ -14,7 +14,7 @@ import { DataType } from "../../types";
 import { Entypo } from "@expo/vector-icons";
 
 const { width, height } = Dimensions.get("window");
-const index = ({ navigation }: PropsType) => {
+const HomeScreen = ({ navigation }: PropsType) => {
   const RenderItem: FC<{ item: DataType }> = ({ item }) => {
     return (
       <TouchableOpacity
@@ -45,7 +45,7 @@ const index = ({ navigation }: PropsType) => {
   );
 };
 
-export default index;
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   container: {

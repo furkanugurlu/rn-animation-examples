@@ -4,3 +4,10 @@ export interface DataType {
   image: string;
   destinationName: "Home" | "Skeleton";
 }
+
+export interface CarouselDataType {
+  title: string;
+  location: string;
+  date: string;
+  poster: string;
+}
