@@ -121,7 +121,7 @@ const Tabs = ({ data, scrollX, onItemPress }: any) => {
           );
         })}
       </View>
-      {measures.length > 0 && (
+      {measures.length != 0 && (
         <Indicator measures={measures} scrollX={scrollX} />
       )}
     </View>

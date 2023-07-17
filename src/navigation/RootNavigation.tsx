@@ -6,6 +6,7 @@ import {
 import {
   FlatListCarousel,
   HomeScreen,
+  MovieCarousel,
   SkeletonScreen,
   StickyFooter,
   TabsIndicator,
@@ -19,12 +20,18 @@ type RootStackParamList = {
   StickyFooter: {} | undefined;
   FlatListCarousel: {} | undefined;
   TabsIndicator: {} | undefined;
+  MovieCarousel: {} | undefined;
 };
 
 enableScreens();
 export type PropsType = NativeStackScreenProps<
   RootStackParamList,
-  "Home" | "Skeleton" | "StickyFooter" | "FlatListCarousel" | "TabsIndicator"
+  | "Home"
+  | "Skeleton"
+  | "StickyFooter"
+  | "FlatListCarousel"
+  | "TabsIndicator"
+  | "MovieCarousel"
 >;
 
 const Stack = createNativeStackNavigator();
@@ -40,6 +47,7 @@ const RootNavigation = () => {
       <Stack.Screen name="StickyFooter" component={StickyFooter} />
       <Stack.Screen name="FlatListCarousel" component={FlatListCarousel} />
       <Stack.Screen name="TabsIndicator" component={TabsIndicator} />
+      <Stack.Screen name="MovieCarousel" component={MovieCarousel} />
     </Stack.Navigator>
   );
 };
