@@ -4,12 +4,14 @@ import {
   NativeStackScreenProps,
 } from "@react-navigation/native-stack";
 import {
+  Advanced3DCarousel,
   FlatListCarousel,
   HomeScreen,
   MovieCarousel,
   SkeletonScreen,
   StickyFooter,
   TabsIndicator,
+  PincodeAnimation,
 } from "../screens";
 
 import { enableScreens } from "react-native-screens";
@@ -21,6 +23,8 @@ type RootStackParamList = {
   FlatListCarousel: {} | undefined;
   TabsIndicator: {} | undefined;
   MovieCarousel: {} | undefined;
+  Advanced3DCarousel: {} | undefined;
+  PincodeAnimation: {} | undefined;
 };
 
 enableScreens();
@@ -32,6 +36,8 @@ export type PropsType = NativeStackScreenProps<
   | "FlatListCarousel"
   | "TabsIndicator"
   | "MovieCarousel"
+  | "Advanced3DCarousel"
+  | "PincodeAnimation"
 >;
 
 const Stack = createNativeStackNavigator();
@@ -48,6 +54,8 @@ const RootNavigation = () => {
       <Stack.Screen name="FlatListCarousel" component={FlatListCarousel} />
       <Stack.Screen name="TabsIndicator" component={TabsIndicator} />
       <Stack.Screen name="MovieCarousel" component={MovieCarousel} />
+      <Stack.Screen name="Advanced3DCarousel" component={Advanced3DCarousel} />
+      <Stack.Screen name="PincodeAnimation" component={PincodeAnimation} />
     </Stack.Navigator>
   );
 };

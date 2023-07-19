@@ -4,6 +4,8 @@ import StickyFooter from "./StickyFooter";
 import FlatListCarousel from "./FlatListCarousel";
 import TabsIndicator from "./TabsIndicator";
 import MovieCarousel from "./MovieCarousel";
+import Advanced3DCarousel from "./Advanced3DCarousel";
+import PincodeAnimation from "./PincodeAnimation";
 
 export {
   HomeScreen,
@@ -12,4 +14,6 @@ export {
   FlatListCarousel,
   TabsIndicator,
   MovieCarousel,
+  Advanced3DCarousel,
+  PincodeAnimation,
 };
